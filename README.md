@@ -169,4 +169,37 @@ sudo certbot --nginx
 
 ```
 
+ssh -i 'your .pem file' ubuntu@your_public_ip_address
+2.To Update your ubuntu
+//First run this => sudo apt update
+//And then run this
+sudo apt upgrade
+
+3.Install Node.js in your ubuntu machine
+//First run this
+
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+//And then run this
+sudo apt-get install -y nodejs
+4. To Create .env file
+vim .env
+// After this
+Copy everything from your .env file, paste it into the Ubuntu terminal, then press Ctrl + C.
+After that, type :wq to save the file.
+
+5. To Edit any file
+6.
+vim filename
+
+7.
+
+6. Setup to run ec2 instance after closing terminal
+sudo npm install -g pm2
+// and after this run
+pm2 start "your file path" --name "my-node-app"
+7. For Frontend
+sudo npm install -g serve
+// And after this run
+pm2 start "serve -s dist -l 3000" --name "vite-app"
+
 Thank you for following this comprehensive AWS MERN deployment guide! If you found this tutorial helpful like, share & subscribe.
